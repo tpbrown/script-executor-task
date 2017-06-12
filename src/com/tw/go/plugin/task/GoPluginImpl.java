@@ -116,10 +116,6 @@ public class GoPluginImpl implements GoPlugin {
 
             Map<String, String> scriptConfig = (Map<String, String>) configKeyValuePairs.get("script");
             String scriptValue = scriptConfig.get("value");
-            JobConsoleLogger.getConsoleLogger().printLine("[script-executor] Script: \n ");
-            JobConsoleLogger.getConsoleLogger().printLine("[script-executor] -------------------------");
-            JobConsoleLogger.getConsoleLogger().printLine(scriptValue);
-            JobConsoleLogger.getConsoleLogger().printLine("[script-executor] -------------------------");
             Map<String, String> shTypeConfig = (Map<String, String>) configKeyValuePairs.get("shtype");
             String shType = shTypeConfig.get("value");
             if (shType == null || shType.trim().equals("")){
